@@ -19,7 +19,9 @@
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- ================================
+         NAVIGATION
+         ================================= -->
 
     <header class="navbar">
 
@@ -27,22 +29,30 @@
             Raza Wholesale Cloths
         </div>
 
+
         <nav>
 
-            <a href="index.html">
-                Home
+            <a href="index.html" aria-label="Home">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-text">Home</span>
             </a>
 
-            <a href="products.html">
-                Products
+
+            <a href="products.html" aria-label="Products">
+                <span class="nav-icon">▦</span>
+                <span class="nav-text">Products</span>
             </a>
 
-            <a href="cart.html">
-                Cart
+
+            <a href="cart.html" aria-label="Cart">
+                <span class="nav-icon">🛍</span>
+                <span class="nav-text">Cart</span>
             </a>
 
-            <a href="login.html">
-                Login
+
+            <a href="login.html" aria-label="Login">
+                <span class="nav-icon">♙</span>
+                <span class="nav-text">Login</span>
             </a>
 
         </nav>
@@ -50,7 +60,9 @@
     </header>
 
 
-    <!-- Cart -->
+    <!-- ================================
+         CART
+         ================================= -->
 
     <main>
 
@@ -73,6 +85,8 @@
             </div>
 
 
+            <!-- CART SUMMARY -->
+
             <div
                 id="cartSummary"
                 class="cart-summary"
@@ -82,15 +96,18 @@
                     Cart Summary
                 </h2>
 
+
                 <p>
                     Total Items:
                     <span id="totalItems">0</span>
                 </p>
 
+
                 <p>
                     Total Price:
                     ₹<span id="totalPrice">0</span>
                 </p>
+
 
                 <button id="checkoutButton">
                     Proceed to Checkout
@@ -103,9 +120,13 @@
     </main>
 
 
-    <!-- JavaScript -->
+    <!-- ================================
+         JAVASCRIPT
+         ================================= -->
+
     <script src="./js/main.js"></script>
-    <script src="js/cart.js"></script>
+
+    <script src="./js/cart.js"></script>
 
 </body>
 
