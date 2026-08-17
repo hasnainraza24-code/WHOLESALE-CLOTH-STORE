@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cart | Raza Wholesale Cloths</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Raza Wholesale Cloths
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Cart -->
+
+    <main>
+
+        <section class="cart-section">
+
+            <h1>
+                Your Shopping Cart
+            </h1>
+
+
+            <div
+                id="cartContainer"
+                class="cart-container"
+            >
+
+                <p>
+                    Your cart is empty.
+                </p>
+
+            </div>
+
+
+            <div
+                id="cartSummary"
+                class="cart-summary"
+            >
+
+                <h2>
+                    Cart Summary
+                </h2>
+
+                <p>
+                    Total Items:
+                    <span id="totalItems">0</span>
+                </p>
+
+                <p>
+                    Total Price:
+                    ₹<span id="totalPrice">0</span>
+                </p>
+
+                <button id="checkoutButton">
+                    Proceed to Checkout
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>
