@@ -11,19 +11,22 @@ from database.database import (
 app = FastAPI()
 
 
+# CORS Configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:5500"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 
+# Database Setup
 create_products_table()
 insert_sample_products()
 
 
+# Home Route
 @app.get("/")
 def home():
 
@@ -32,4 +35,5 @@ def home():
     }
 
 
+# Product Routes
 app.include_router(products_router)
