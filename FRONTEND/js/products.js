@@ -95,7 +95,7 @@ function displayProducts(products) {
 function loadProducts() {
 
     fetch(
-        "http://127.0.0.1:8000/products"
+    "https://wholesale-cloth-store.onrender.com/products"
     )
 
         .then(function (response) {
@@ -139,7 +139,7 @@ function searchProducts() {
 
 
     fetch(
-        `http://127.0.0.1:8000/products/search?keyword=${encodeURIComponent(keyword)}`
+    `https://wholesale-cloth-store.onrender.com/products/search?keyword=${encodeURIComponent(keyword)}`
     )
 
         .then(function (response) {
@@ -171,7 +171,7 @@ function searchProducts() {
 function sortProducts() {
 
     fetch(
-        "http://127.0.0.1:8000/products/sort?order=asc"
+    "https://wholesale-cloth-store.onrender.com/products/sort?order=asc"
     )
 
         .then(function (response) {
