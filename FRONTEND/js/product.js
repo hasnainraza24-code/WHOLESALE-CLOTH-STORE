@@ -26,7 +26,7 @@ function loadProduct() {
 
 
     fetch(
-        `http://127.0.0.1:8000/products/${productId}`
+    `https://wholesale-cloth-store.onrender.com/products/${productId}`
     )
 
         .then(function (response) {
