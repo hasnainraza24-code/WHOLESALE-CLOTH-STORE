@@ -270,7 +270,7 @@ body {
     display: flex;
 
     align-items: center;
-    justify-content: flex-left;
+    justify-content: flex-start;
 
     gap: 14px;
 
